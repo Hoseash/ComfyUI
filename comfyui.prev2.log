@@ -1,11 +1,11 @@
-** ComfyUI startup time: 2023-12-29 23:37:59.600185
+** ComfyUI startup time: 2023-12-29 23:39:41.968403
 ** Platform: Darwin
 ** Python version: 3.12.1 (main, Dec  8 2023, 18:57:37) [Clang 14.0.3 (clang-1403.0.22.14.1)]
-** Python executable: /opt/homebrew/opt/python@3.12/bin/python3.12
+** Python executable: /Users/yaofang/Documents/GitHub/ComfyUI/.venv/bin/python
 ** Log path: /Users/yaofang/Documents/GitHub/ComfyUI/comfyui.log
 
 Prestartup times for custom nodes:
-   0.2 seconds: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager
+   0.0 seconds: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager
 
 Traceback (most recent call last):
   File "/Users/yaofang/Documents/GitHub/ComfyUI/main.py", line 73, in <module>
