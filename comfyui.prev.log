@@ -1,8 +1,7 @@
-** ComfyUI startup time: 2023-12-29 23:40:31.703946
+** ComfyUI startup time: 2023-12-29 23:50:05.808372
 ** Platform: Darwin
-** Python version: 3.9.6 (default, Nov 10 2023, 13:38:27) 
-[Clang 15.0.0 (clang-1500.1.0.2.5)]
-** Python executable: /Library/Developer/CommandLineTools/usr/bin/python3
+** Python version: 3.12.1 (main, Dec  8 2023, 18:57:37) [Clang 14.0.3 (clang-1403.0.22.14.1)]
+** Python executable: /Users/yaofang/Documents/GitHub/ComfyUI/.venv/bin/python
 ** Log path: /Users/yaofang/Documents/GitHub/ComfyUI/comfyui.log
 
 Prestartup times for custom nodes:
@@ -11,6 +10,6 @@ Prestartup times for custom nodes:
 Traceback (most recent call last):
   File "/Users/yaofang/Documents/GitHub/ComfyUI/main.py", line 73, in <module>
     import comfy.utils
-  File "/Users/yaofang/Documents/GitHub/ComfyUI/comfy/utils.py", line 5, in <module>
-    import safetensors.torch
-ModuleNotFoundError: No module named 'safetensors'
+  File "/Users/yaofang/Documents/GitHub/ComfyUI/comfy/utils.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
