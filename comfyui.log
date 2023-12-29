@@ -1,11 +1,11 @@
-** ComfyUI startup time: 2023-12-27 00:59:46.219431
+** ComfyUI startup time: 2023-12-29 17:44:31.799140
 ** Platform: Darwin
 ** Python version: 3.11.5 (main, Sep 11 2023, 08:31:25) [Clang 14.0.6 ]
 ** Python executable: /Users/yaofang/miniconda3/bin/python
 ** Log path: /Users/yaofang/Documents/GitHub/ComfyUI/comfyui.log
 
 Prestartup times for custom nodes:
-   0.0 seconds: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager
+   0.5 seconds: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager
 
 Total VRAM 16384 MB, total RAM 16384 MB
 Forcing FP16.
@@ -14,442 +14,73 @@ Device: mps
 VAE dtype: torch.float32
 Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
 ### Loading: ComfyUI-Manager (V1.17)
-## ComfyUI-Manager: installing dependencies
- Collecting GitPython (from -r /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt (line 1))
-   Downloading GitPython-3.1.40-py3-none-any.whl.metadata (12 kB)
- Collecting matrix-client==0.4.0 (from -r /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt (line 2))
-   Downloading matrix_client-0.4.0-py2.py3-none-any.whl (43 kB)
-      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.5/43.5 kB 195.6 kB/s eta 0:00:00
- Requirement already satisfied: requests~=2.22 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matrix-client==0.4.0->-r /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt (line 2)) (2.31.0)
- Requirement already satisfied: urllib3~=1.21 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matrix-client==0.4.0->-r /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt (line 2)) (1.26.18)
- Collecting gitdb<5,>=4.0.1 (from GitPython->-r /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt (line 1))
-   Using cached gitdb-4.0.11-py3-none-any.whl.metadata (1.2 kB)
- Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->GitPython->-r /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt (line 1))
-   Using cached smmap-5.0.1-py3-none-any.whl.metadata (4.3 kB)
- Requirement already satisfied: charset-normalizer<4,>=2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests~=2.22->matrix-client==0.4.0->-r /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt (line 2)) (2.0.4)
- Requirement already satisfied: idna<4,>=2.5 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests~=2.22->matrix-client==0.4.0->-r /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt (line 2)) (3.4)
- Requirement already satisfied: certifi>=2017.4.17 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests~=2.22->matrix-client==0.4.0->-r /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt (line 2)) (2023.11.17)
- Downloading GitPython-3.1.40-py3-none-any.whl (190 kB)
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 190.6/190.6 kB 457.2 kB/s eta 0:00:00
- Using cached gitdb-4.0.11-py3-none-any.whl (62 kB)
- Using cached smmap-5.0.1-py3-none-any.whl (24 kB)
- Installing collected packages: smmap, matrix-client, gitdb, GitPython
- Successfully installed GitPython-3.1.40 gitdb-4.0.11 matrix-client-0.4.0 smmap-5.0.1
-## ComfyUI-Manager: installing dependencies done.
-### ComfyUI Revision: 1856 [61b3f15f] | Released on '2023-12-26'
+### ComfyUI Revision: 1864 [79809297] | Released on '2023-12-29'
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+### Loading: ComfyUI-Impact-Pack (V4.53.1)
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+### Loading: ComfyUI-Impact-Pack (Subpack: V0.3.2)
 
 Import times for custom nodes:
-   5.9 seconds: FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json/Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager
+   0.1 seconds: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager
+   3.7 seconds: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Impact-Pack
 
-
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
 Starting server
 
 To see the GUI go to: http://127.0.0.1:8188
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[Impact Pack] Wildcards loading done.
+FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
 [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
-[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
-[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
 [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
-FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
-FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1514988643_custom-node-list.json
-FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
-FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
-FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1514988643_custom-node-list.json
-FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
-Install custom node 'ComfyUI Impact Pack'
-install: ['https://github.com/ltdrdata/ComfyUI-Impact-Pack']
-Download: git clone 'https://github.com/ltdrdata/ComfyUI-Impact-Pack'
-0it [00:00, ?it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████| 678.0/678.0 [00:02<00:00, 303.20it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████| 678.0/678.0 [00:02<00:00, 303.18it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████| 136.0/136.0 [00:02<00:00, 60.54it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████| 136.0/136.0 [00:02<00:00, 60.54it/s]100%|███████████████████████████████████████████████████████████████████████████████████████| 3135.0/3135.0 [00:06<00:00, 482.14it/s]100%|███████████████████████████████████████████████████████████████████████████████████████| 3135.0/3135.0 [00:06<00:00, 482.13it/s]100%|███████████████████████████████████████████████████████████████████████████████████████| 2074.0/2074.0 [00:06<00:00, 317.30it/s]100%|███████████████████████████████████████████████████████████████████████████████████████| 2074.0/2074.0 [00:06<00:00, 317.30it/s]100%|███████████████████████████████████████████████████████████████████████████████████████| 2074.0/2074.0 [00:06<00:00, 300.46it/s]
-Install: pip packages
-
-## ComfyUI-Manager: EXECUTE => ['/Users/yaofang/miniconda3/bin/python', '-m', 'pip', 'install', 'segment-anything']
- Collecting segment-anything
-   Downloading segment_anything-1.0-py3-none-any.whl (36 kB)
- Installing collected packages: segment-anything
- Successfully installed segment-anything-1.0
-
-## ComfyUI-Manager: EXECUTE => ['/Users/yaofang/miniconda3/bin/python', '-m', 'pip', 'install', 'scikit-image']
- Collecting scikit-image
-   Downloading scikit_image-0.22.0-cp311-cp311-macosx_12_0_arm64.whl.metadata (13 kB)
- Requirement already satisfied: numpy>=1.22 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from scikit-image) (1.26.2)
- Requirement already satisfied: scipy>=1.8 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from scikit-image) (1.11.4)
- Requirement already satisfied: networkx>=2.8 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from scikit-image) (3.2.1)
- Requirement already satisfied: pillow>=9.0.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from scikit-image) (10.1.0)
- Collecting imageio>=2.27 (from scikit-image)
-   Using cached imageio-2.33.1-py3-none-any.whl.metadata (4.9 kB)
- Collecting tifffile>=2022.8.12 (from scikit-image)
-   Using cached tifffile-2023.12.9-py3-none-any.whl.metadata (31 kB)
- Requirement already satisfied: packaging>=21 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from scikit-image) (23.1)
- Collecting lazy_loader>=0.3 (from scikit-image)
-   Using cached lazy_loader-0.3-py3-none-any.whl.metadata (4.3 kB)
- Downloading scikit_image-0.22.0-cp311-cp311-macosx_12_0_arm64.whl (13.3 MB)
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.3/13.3 MB 9.7 MB/s eta 0:00:00
- Using cached imageio-2.33.1-py3-none-any.whl (313 kB)
- Using cached lazy_loader-0.3-py3-none-any.whl (9.1 kB)
- Using cached tifffile-2023.12.9-py3-none-any.whl (223 kB)
- Installing collected packages: tifffile, lazy_loader, imageio, scikit-image
- Successfully installed imageio-2.33.1 lazy_loader-0.3 scikit-image-0.22.0 tifffile-2023.12.9
-
-## ComfyUI-Manager: EXECUTE => ['/Users/yaofang/miniconda3/bin/python', '-m', 'pip', 'install', 'piexif']
- Collecting piexif
-   Using cached piexif-1.1.3-py2.py3-none-any.whl (20 kB)
- Installing collected packages: piexif
- Successfully installed piexif-1.1.3
-
-## ComfyUI-Manager: EXECUTE => ['/Users/yaofang/miniconda3/bin/python', '-m', 'pip', 'install', 'transformers']
- Requirement already satisfied: transformers in /Users/yaofang/miniconda3/lib/python3.11/site-packages (4.36.2)
- Requirement already satisfied: filelock in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from transformers) (3.13.1)
- Requirement already satisfied: huggingface-hub<1.0,>=0.19.3 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from transformers) (0.20.1)
- Requirement already satisfied: numpy>=1.17 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from transformers) (1.26.2)
- Requirement already satisfied: packaging>=20.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from transformers) (23.1)
- Requirement already satisfied: pyyaml>=5.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from transformers) (6.0.1)
- Requirement already satisfied: regex!=2019.12.17 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from transformers) (2023.12.25)
- Requirement already satisfied: requests in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from transformers) (2.31.0)
- Requirement already satisfied: tokenizers<0.19,>=0.14 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from transformers) (0.15.0)
- Requirement already satisfied: safetensors>=0.3.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from transformers) (0.4.1)
- Requirement already satisfied: tqdm>=4.27 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from transformers) (4.65.0)
- Requirement already satisfied: fsspec>=2023.5.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from huggingface-hub<1.0,>=0.19.3->transformers) (2023.12.2)
- Requirement already satisfied: typing-extensions>=3.7.4.3 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from huggingface-hub<1.0,>=0.19.3->transformers) (4.9.0)
- Requirement already satisfied: charset-normalizer<4,>=2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests->transformers) (2.0.4)
- Requirement already satisfied: idna<4,>=2.5 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests->transformers) (3.4)
- Requirement already satisfied: urllib3<3,>=1.21.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests->transformers) (1.26.18)
- Requirement already satisfied: certifi>=2017.4.17 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests->transformers) (2023.11.17)
-
-## ComfyUI-Manager: EXECUTE => ['/Users/yaofang/miniconda3/bin/python', '-m', 'pip', 'install', 'opencv-python-headless']
- Collecting opencv-python-headless
-   Downloading opencv_python_headless-4.8.1.78-cp37-abi3-macosx_11_0_arm64.whl.metadata (19 kB)
- Requirement already satisfied: numpy>=1.21.2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from opencv-python-headless) (1.26.2)
- Downloading opencv_python_headless-4.8.1.78-cp37-abi3-macosx_11_0_arm64.whl (33.1 MB)
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 33.1/33.1 MB 33.8 MB/s eta 0:00:00
- Installing collected packages: opencv-python-headless
- Successfully installed opencv-python-headless-4.8.1.78
-
-## ComfyUI-Manager: EXECUTE => ['/Users/yaofang/miniconda3/bin/python', '-m', 'pip', 'install', 'GitPython']
- Requirement already satisfied: GitPython in /Users/yaofang/miniconda3/lib/python3.11/site-packages (3.1.40)
- Requirement already satisfied: gitdb<5,>=4.0.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from GitPython) (4.0.11)
- Requirement already satisfied: smmap<6,>=3.0.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from gitdb<5,>=4.0.1->GitPython) (5.0.1)
-Install: install script
-
-## ComfyUI-Manager: EXECUTE => ['/Users/yaofang/miniconda3/bin/python', 'install.py']
-[!] 
-100%|██████████| 51996128/51996128 [00:03<00:00, 14826545.21it/s]
-[!] 
-100%|██████████| 22484536/22484536 [00:02<00:00, 8827830.38it/s] 
-[!] 
-100%|██████████| 54791722/54791722 [00:03<00:00, 17366350.69it/s]
- ### ComfyUI-Impact-Pack: Check dependencies
- ### ComfyUI-Impact-Pack: Updating subpack
- [Impact Pack] EXECUTE: ['/Users/yaofang/miniconda3/bin/python', 'install.py'] in '/Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack'
- Downloading https://cdn-lfs.huggingface.co/repos/0d/db/0ddb8d3fcb6ee9737d9dd7e090e6c6cb6e40728d12307180160e7f654cb345de/e3893a92c5c1907136b6cc75404094db767c1e0cfefe1b43e87dad72af2e4c9f?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27face_yolov8m.pt%3B+filename%3D%22face_yolov8m.pt%22%3B&Expires=1703869328&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwMzg2OTMyOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy8wZC9kYi8wZGRiOGQzZmNiNmVlOTczN2Q5ZGQ3ZTA5MGU2YzZjYjZlNDA3MjhkMTIzMDcxODAxNjBlN2Y2NTRjYjM0NWRlL2UzODkzYTkyYzVjMTkwNzEzNmI2Y2M3NTQwNDA5NGRiNzY3YzFlMGNmZWZlMWI0M2U4N2RhZDcyYWYyZTRjOWY%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=SIWHsZiavrGmjAUUF3FTSsC0eDHOipRJfu7cM4NpPK7Hk0nn-PNiBPmdiOTRlzR7uBngo0DXFiamD%7E4-Ab9odc7BtYEdcFjnBspOulV9xXV1DiT4A-VIEkSyLcKfAYBHzPdnXE2JRQKgvxbnMHcPA0-OA6qaIaNsJ8nP8kkC7gISGSgIXgW2t80yyC3KFXHyL5KYs9gNdTP4hMlU-9CMprdCui3LlUEXrQiLVTQnc0a1RBbbQSoxzfdVcLu3cDYCUGx9wLCX7QqA4-Vnzkc5-9X0jjl%7EmV8Uq2XK06lCGgfze98pP1W4dj8cs-Kev2KyKL%7EfvFfiNgmIyUR2Pntrrg__&Key-Pair-Id=KVTP0A1DKRTAX to /Users/yaofang/Documents/GitHub/ComfyUI/models/ultralytics/bbox/face_yolov8m.pt
-[!] Downloading https://cdn-lfs.huggingface.co/repos/0d/db/0ddb8d3fcb6ee9737d9dd7e090e6c6cb6e40728d12307180160e7f654cb345de/30878cea9870964d4a238339e9dcff002078bbbaa1a058b07e11c167f67eca1c?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27hand_yolov8s.pt%3B+filename%3D%22hand_yolov8s.pt%22%3B&Expires=1703867848&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwMzg2Nzg0OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy8wZC9kYi8wZGRiOGQzZmNiNmVlOTczN2Q5ZGQ3ZTA5MGU2YzZjYjZlNDA3MjhkMTIzMDcxODAxNjBlN2Y2NTRjYjM0NWRlLzMwODc4Y2VhOTg3MDk2NGQ0YTIzODMzOWU5ZGNmZjAwMjA3OGJiYmFhMWEwNThiMDdlMTFjMTY3ZjY3ZWNhMWM%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=qgU00JCzg8fHWDWZu7iu9S-Ef-mb8ori3%7E2ZAT4gYs2z78U79GnuCV2zhDfa6-YZTf4cJsFDOyo%7EFpgTpVUSDrHaz8lhG2kZB6w9LhVYQNzsNaRoT3myrWDNOfo-PWrkhMlqNhRmDGQeXywJIhE4EQyz-Uf5kxjMUgFPUPX4dGe1CLqUZmOHafMOFwWuA9bYXdQSrSfvxtmF0ZzXpH8R6fSsJJOmr6QNZQ%7E7Ocewwu3H5vqF9BWG49SUqXVAYv56XrHfZSh5PofoOqUdv5oSCP87kXGj5k6R8zo%7Ejq4Slt92pIq8NH%7En8WfN8J%7EGKaQ%7Em3m0spZttvKXwkA4V4AiQw__&Key-Pair-Id=KVTP0A1DKRTAX to /Users/yaofang/Documents/GitHub/ComfyUI/models/ultralytics/bbox/hand_yolov8s.pt
- Downloading https://cdn-lfs.huggingface.co/repos/0d/db/0ddb8d3fcb6ee9737d9dd7e090e6c6cb6e40728d12307180160e7f654cb345de/1fd7e562f240a5debd48bf737753de6fb60c63f8664121bb522f090a885d8254?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27person_yolov8m-seg.pt%3B+filename%3D%22person_yolov8m-seg.pt%22%3B&Expires=1703868588&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwMzg2ODU4OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy8wZC9kYi8wZGRiOGQzZmNiNmVlOTczN2Q5ZGQ3ZTA5MGU2YzZjYjZlNDA3MjhkMTIzMDcxODAxNjBlN2Y2NTRjYjM0NWRlLzFmZDdlNTYyZjI0MGE1ZGViZDQ4YmY3Mzc3NTNkZTZmYjYwYzYzZjg2NjQxMjFiYjUyMmYwOTBhODg1ZDgyNTQ%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=XQS3qheowtX0QFe1js8Di0gyyRJgdKBIffLyKryHS8a18Wun2yQ8PQqVz17eEiNU4pe4DKyGpU2xXYSk505D9z5oT5KNog8MaS-0UlZbYTZrXPAU3wJALFRJd%7EVllCLnt35azAO6CxAu0-SxqgTfFDZNmHCSG291K1cGO-QEeAnVl-drtXdi8kpQPJ6w4eRTbAYGYFZWDBX1%7E90ML1XBoBKGeblDaCgDw5MGfdnqeXStDs6AgdC6IT1uOCQL3uVajH1MX9yPNhcZMjneBLIYGH4txfEUZhznEfqqWZQsfh8G8UaaJoQ6R9jzonWin%7EUHiD4CVNaqSA19CyJpSTQz0A__&Key-Pair-Id=KVTP0A1DKRTAX to /Users/yaofang/Documents/GitHub/ComfyUI/models/ultralytics/segm/person_yolov8m-seg.pt
- req_path: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack/requirements.txt
- [Impact Pack] EXECUTE: ['/Users/yaofang/miniconda3/bin/python', '-m', 'pip', 'install', '-r', 'requirements.txt'] in '/Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack'
- Collecting ultralytics!=8.0.177 (from -r requirements.txt (line 1))
- 
-   Downloading ultralytics-8.0.229-py3-none-any.whl.metadata (32 kB)
- Collecting matplotlib>=3.3.0 (from ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Downloading matplotlib-3.8.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (5.8 kB)
- Requirement already satisfied: numpy>=1.22.2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.26.2)
- Collecting opencv-python>=4.6.0 (from ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Using cached opencv_python-4.8.1.78-cp37-abi3-macosx_11_0_arm64.whl.metadata (19 kB)
- Requirement already satisfied: pillow>=7.1.2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (10.1.0)
- Requirement already satisfied: pyyaml>=5.3.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (6.0.1)
- Requirement already satisfied: requests>=2.23.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.31.0)
- Requirement already satisfied: scipy>=1.4.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.11.4)
- Requirement already satisfied: torch>=1.8.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.2)
- Requirement already satisfied: torchvision>=0.9.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.16.2)
- Requirement already satisfied: tqdm>=4.64.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.65.0)
- Collecting pandas>=1.1.4 (from ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Downloading pandas-2.1.4-cp311-cp311-macosx_11_0_arm64.whl.metadata (18 kB)
- Collecting seaborn>=0.11.0 (from ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Downloading seaborn-0.13.0-py3-none-any.whl.metadata (5.3 kB)
- Requirement already satisfied: psutil in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (5.9.7)
- Collecting py-cpuinfo (from ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Downloading py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
- Collecting thop>=0.1.1 (from ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Downloading thop-0.1.1.post2209072238-py3-none-any.whl (15 kB)
- Collecting contourpy>=1.0.1 (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Downloading contourpy-1.2.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (5.8 kB)
- Collecting cycler>=0.10 (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
- Collecting fonttools>=4.22.0 (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Downloading fonttools-4.47.0-cp311-cp311-macosx_10_9_universal2.whl.metadata (157 kB)
-      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 157.2/157.2 kB 433.8 kB/s eta 0:00:00
- Collecting kiwisolver>=1.3.1 (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Downloading kiwisolver-1.4.5-cp311-cp311-macosx_11_0_arm64.whl.metadata (6.4 kB)
- Requirement already satisfied: packaging>=20.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (23.1)
- Collecting pyparsing>=2.3.1 (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Using cached pyparsing-3.1.1-py3-none-any.whl.metadata (5.1 kB)
- Collecting python-dateutil>=2.7 (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
- Collecting pytz>=2020.1 (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Using cached pytz-2023.3.post1-py2.py3-none-any.whl.metadata (22 kB)
- Collecting tzdata>=2022.1 (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Using cached tzdata-2023.3-py2.py3-none-any.whl (341 kB)
- Requirement already satisfied: charset-normalizer<4,>=2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.0.4)
- Requirement already satisfied: idna<4,>=2.5 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.4)
- Requirement already satisfied: urllib3<3,>=1.21.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.26.18)
- Requirement already satisfied: certifi>=2017.4.17 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.11.17)
- Requirement already satisfied: filelock in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.13.1)
- Requirement already satisfied: typing-extensions in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.9.0)
- Requirement already satisfied: sympy in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.12)
- Requirement already satisfied: networkx in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.2.1)
- Requirement already satisfied: jinja2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1.2)
- Requirement already satisfied: fsspec in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.12.2)
- Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1))
-   Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
- Requirement already satisfied: MarkupSafe>=2.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from jinja2->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.3)
- Requirement already satisfied: mpmath>=0.19 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from sympy->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.3.0)
- Downloading ultralytics-8.0.229-py3-none-any.whl (663 kB)
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 663.2/663.2 kB 1.1 MB/s eta 0:00:00
- Downloading matplotlib-3.8.2-cp311-cp311-macosx_11_0_arm64.whl (7.5 MB)
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.5/7.5 MB 2.7 MB/s eta 0:00:00
- Using cached opencv_python-4.8.1.78-cp37-abi3-macosx_11_0_arm64.whl (33.1 MB)
- Downloading pandas-2.1.4-cp311-cp311-macosx_11_0_arm64.whl (10.8 MB)
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.8/10.8 MB 4.1 MB/s eta 0:00:00
- Downloading seaborn-0.13.0-py3-none-any.whl (294 kB)
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 294.6/294.6 kB 1.3 MB/s eta 0:00:00
- Downloading contourpy-1.2.0-cp311-cp311-macosx_11_0_arm64.whl (243 kB)
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 243.4/243.4 kB 1.1 MB/s eta 0:00:00
- Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
- Downloading fonttools-4.47.0-cp311-cp311-macosx_10_9_universal2.whl (2.8 MB)
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.8/2.8 MB 2.7 MB/s eta 0:00:00
- Downloading kiwisolver-1.4.5-cp311-cp311-macosx_11_0_arm64.whl (66 kB)
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.2/66.2 kB 5.0 MB/s eta 0:00:00
- Using cached pyparsing-3.1.1-py3-none-any.whl (103 kB)
- Using cached pytz-2023.3.post1-py2.py3-none-any.whl (502 kB)
- Installing collected packages: pytz, py-cpuinfo, tzdata, six, pyparsing, opencv-python, kiwisolver, fonttools, cycler, contourpy, python-dateutil, thop, pandas, matplotlib, seaborn, ultralytics
- Successfully installed contourpy-1.2.0 cycler-0.12.1 fonttools-4.47.0 kiwisolver-1.4.5 matplotlib-3.8.2 opencv-python-4.8.1.78 pandas-2.1.4 py-cpuinfo-9.0.0 pyparsing-3.1.1 python-dateutil-2.8.2 pytz-2023.3.post1 seaborn-0.13.0 six-1.16.0 thop-0.1.1.post2209072238 tzdata-2023.3 ultralytics-8.0.229
- req_path: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack/requirements.txt
- [Impact Pack] EXECUTE: ['/Users/yaofang/miniconda3/bin/python', '-m', 'pip', 'install', '-r', 'requirements.txt'] in '/Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack'
- Requirement already satisfied: ultralytics!=8.0.177 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from -r requirements.txt (line 1)) (8.0.229)
- Requirement already satisfied: matplotlib>=3.3.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.8.2)
- Requirement already satisfied: numpy>=1.22.2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.26.2)
- Requirement already satisfied: opencv-python>=4.6.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.8.1.78)
- Requirement already satisfied: pillow>=7.1.2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (10.1.0)
- Requirement already satisfied: pyyaml>=5.3.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (6.0.1)
- Requirement already satisfied: requests>=2.23.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.31.0)
- Requirement already satisfied: scipy>=1.4.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.11.4)
- Requirement already satisfied: torch>=1.8.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.2)
- Requirement already satisfied: torchvision>=0.9.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.16.2)
- Requirement already satisfied: tqdm>=4.64.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.65.0)
- Requirement already satisfied: pandas>=1.1.4 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.4)
- Requirement already satisfied: seaborn>=0.11.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.13.0)
- Requirement already satisfied: psutil in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (5.9.7)
- Requirement already satisfied: py-cpuinfo in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (9.0.0)
- Requirement already satisfied: thop>=0.1.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.1.1.post2209072238)
- Requirement already satisfied: contourpy>=1.0.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.2.0)
- Requirement already satisfied: cycler>=0.10 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.12.1)
- Requirement already satisfied: fonttools>=4.22.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.47.0)
- Requirement already satisfied: kiwisolver>=1.3.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.4.5)
- Requirement already satisfied: packaging>=20.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (23.1)
- Requirement already satisfied: pyparsing>=2.3.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1.1)
- Requirement already satisfied: python-dateutil>=2.7 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.8.2)
- Requirement already satisfied: pytz>=2020.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.3.post1)
- Requirement already satisfied: tzdata>=2022.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.3)
- Requirement already satisfied: charset-normalizer<4,>=2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.0.4)
- Requirement already satisfied: idna<4,>=2.5 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.4)
- Requirement already satisfied: urllib3<3,>=1.21.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.26.18)
- Requirement already satisfied: certifi>=2017.4.17 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.11.17)
- Requirement already satisfied: filelock in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.13.1)
- Requirement already satisfied: typing-extensions in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.9.0)
- Requirement already satisfied: sympy in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.12)
- Requirement already satisfied: networkx in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.2.1)
- Requirement already satisfied: jinja2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1.2)
- Requirement already satisfied: fsspec in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.12.2)
- Requirement already satisfied: six>=1.5 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.16.0)
- Requirement already satisfied: MarkupSafe>=2.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from jinja2->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.3)
- Requirement already satisfied: mpmath>=0.19 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from sympy->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.3.0)
- req_path: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt
- ### ComfyUI-Impact-Pack: Check basic models
- Downloading https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth to /Users/yaofang/Documents/GitHub/ComfyUI/models/sams/sam_vit_b_01ec64.pth
-100%|█████████▉| 374505472/375042383 [00:44<00:00, 19822551.97it/s]
-100%|██████████| 375042383/375042383 [00:44<00:00, 8380473.54it/s] 
- ### ComfyUI-Impact-Pack: onnx model directory created (/Users/yaofang/Documents/GitHub/ComfyUI/models/onnx)
-Installation was successful.
-
-## ComfyUI-Manager: EXECUTE => ['/Users/yaofang/miniconda3/bin/python', '-m', 'pip', 'install', 'ultralytics']
- Requirement already satisfied: ultralytics in /Users/yaofang/miniconda3/lib/python3.11/site-packages (8.0.229)
- Requirement already satisfied: matplotlib>=3.3.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (3.8.2)
- Requirement already satisfied: numpy>=1.22.2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (1.26.2)
- Requirement already satisfied: opencv-python>=4.6.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (4.8.1.78)
- Requirement already satisfied: pillow>=7.1.2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (10.1.0)
- Requirement already satisfied: pyyaml>=5.3.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (6.0.1)
- Requirement already satisfied: requests>=2.23.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (2.31.0)
- Requirement already satisfied: scipy>=1.4.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (1.11.4)
- Requirement already satisfied: torch>=1.8.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (2.1.2)
- Requirement already satisfied: torchvision>=0.9.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (0.16.2)
- Requirement already satisfied: tqdm>=4.64.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (4.65.0)
- Requirement already satisfied: pandas>=1.1.4 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (2.1.4)
- Requirement already satisfied: seaborn>=0.11.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (0.13.0)
- Requirement already satisfied: psutil in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (5.9.7)
- Requirement already satisfied: py-cpuinfo in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (9.0.0)
- Requirement already satisfied: thop>=0.1.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from ultralytics) (0.1.1.post2209072238)
- Requirement already satisfied: contourpy>=1.0.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics) (1.2.0)
- Requirement already satisfied: cycler>=0.10 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics) (0.12.1)
- Requirement already satisfied: fonttools>=4.22.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics) (4.47.0)
- Requirement already satisfied: kiwisolver>=1.3.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics) (1.4.5)
- Requirement already satisfied: packaging>=20.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics) (23.1)
- Requirement already satisfied: pyparsing>=2.3.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics) (3.1.1)
- Requirement already satisfied: python-dateutil>=2.7 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics) (2.8.2)
- Requirement already satisfied: pytz>=2020.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from pandas>=1.1.4->ultralytics) (2023.3.post1)
- Requirement already satisfied: tzdata>=2022.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from pandas>=1.1.4->ultralytics) (2023.3)
- Requirement already satisfied: charset-normalizer<4,>=2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests>=2.23.0->ultralytics) (2.0.4)
- Requirement already satisfied: idna<4,>=2.5 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests>=2.23.0->ultralytics) (3.4)
- Requirement already satisfied: urllib3<3,>=1.21.1 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests>=2.23.0->ultralytics) (1.26.18)
- Requirement already satisfied: certifi>=2017.4.17 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from requests>=2.23.0->ultralytics) (2023.11.17)
- Requirement already satisfied: filelock in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics) (3.13.1)
- Requirement already satisfied: typing-extensions in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics) (4.9.0)
- Requirement already satisfied: sympy in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics) (1.12)
- Requirement already satisfied: networkx in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics) (3.2.1)
- Requirement already satisfied: jinja2 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics) (3.1.2)
- Requirement already satisfied: fsspec in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from torch>=1.8.0->ultralytics) (2023.12.2)
- Requirement already satisfied: six>=1.5 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics) (1.16.0)
- Requirement already satisfied: MarkupSafe>=2.0 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from jinja2->torch>=1.8.0->ultralytics) (2.1.3)
- Requirement already satisfied: mpmath>=0.19 in /Users/yaofang/miniconda3/lib/python3.11/site-packages (from sympy->torch>=1.8.0->ultralytics) (1.3.0)
-After restarting ComfyUI, please refresh the browser.
-FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1514988643_custom-node-list.json
-FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
-Update ComfyUI
-ComfyUI update fail: argument of type 'GitCommandError' is not iterable
-got prompt
-ERROR:root:Failed to validate prompt for output 9:
-ERROR:root:* CheckpointLoaderSimple 4:
-ERROR:root:  - Required input is missing: ckpt_name
-ERROR:root:Output will be ignored
-invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-got prompt
-ERROR:root:Failed to validate prompt for output 9:
-ERROR:root:* CheckpointLoaderSimple 4:
-ERROR:root:  - Required input is missing: ckpt_name
-ERROR:root:Output will be ignored
-invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
 got prompt
 model_type EPS
-adm 2816
-got prompt
+adm 0
 Using split attention in VAE
 Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
 Using split attention in VAE
 missing {'cond_stage_model.clip_l.text_projection', 'cond_stage_model.clip_l.logit_scale'}
 left over keys: dict_keys(['cond_stage_model.clip_l.transformer.text_model.embeddings.position_ids'])
-Requested to load SDXLClipModel
+Requested to load SD1ClipModel
 Loading 1 new model
-Requested to load SDXL
+Requested to load BaseModel
 Loading 1 new model
-100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:29<00:00,  1.11s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:29<00:00,  1.48s/it]
+100%|████████████████████████████████████████████████████████████| 20/20 [00:20<00:00,  1.15it/s]100%|████████████████████████████████████████████████████████████| 20/20 [00:20<00:00,  1.00s/it]
 Requested to load AutoencoderKL
 Loading 1 new model
-Prompt executed in 78.40 seconds
-Requested to load SDXL
-Loading 1 new model
-got prompt
-100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:25<00:00,  1.17s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:25<00:00,  1.26s/it]
-Requested to load AutoencoderKL
-Loading 1 new model
-Prompt executed in 53.88 seconds
-Requested to load SDXL
-Loading 1 new model
-100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:26<00:00,  1.32s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:26<00:00,  1.32s/it]
-Requested to load AutoencoderKL
-Loading 1 new model
-Prompt executed in 60.13 seconds
-got prompt
-Requested to load SDXL
-Loading 1 new model
-got prompt
-100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:45<00:00,  2.03s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:45<00:00,  2.28s/it]
-Requested to load AutoencoderKL
-Loading 1 new model
-Prompt executed in 80.48 seconds
-Requested to load SDXL
-Loading 1 new model
-100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:41<00:00,  2.01s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:41<00:00,  2.08s/it]
-Requested to load AutoencoderKL
-Loading 1 new model
-Prompt executed in 72.29 seconds
-got prompt
-Requested to load SDXL
-Loading 1 new model
-100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:41<00:00,  2.02s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:41<00:00,  2.09s/it]
-Requested to load AutoencoderKL
-Loading 1 new model
-Prompt executed in 74.25 seconds
-got prompt
-Requested to load SDXL
-Loading 1 new model
-100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [05:28<00:00, 15.31s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [05:28<00:00, 16.42s/it]
-Requested to load AutoencoderKL
-Loading 1 new model
-Prompt executed in 390.04 seconds
-got prompt
-invalid prompt: {'type': 'prompt_no_outputs', 'message': 'Prompt has no outputs', 'details': '', 'extra_info': {}}
-got prompt
-Requested to load SDXL
-Loading 1 new model
-100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:23<00:00,  1.11s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:23<00:00,  1.19s/it]
-Requested to load AutoencoderKL
-Loading 1 new model
-Prompt executed in 55.14 seconds
-FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
-FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
-got prompt
-Requested to load SDXL
-Loading 1 new model
-100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:24<00:00,  1.13s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:24<00:00,  1.21s/it]
-Requested to load AutoencoderKL
-Loading 1 new model
-Prompt executed in 57.27 seconds
-FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
-got prompt
-Requested to load SDXL
-Loading 1 new model
-100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:24<00:00,  1.12s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:24<00:00,  1.22s/it]
-Requested to load AutoencoderKL
-Loading 1 new model
-Prompt executed in 54.54 seconds
-ERROR:aiohttp.server:Error handling request
+Prompt executed in 25.87 seconds
+Exception in thread Thread-1 (<lambda>):
 Traceback (most recent call last):
-  File "/Users/yaofang/miniconda3/lib/python3.11/site-packages/aiohttp/web_protocol.py", line 452, in _handle_request
-    resp = await request_handler(request)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yaofang/miniconda3/lib/python3.11/site-packages/aiohttp/web_app.py", line 543, in _handle
-    resp = await handler(request)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yaofang/miniconda3/lib/python3.11/site-packages/aiohttp/web_middlewares.py", line 114, in impl
-    return await handler(request)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yaofang/Documents/GitHub/ComfyUI/server.py", line 46, in cache_control
-    response: web.Response = await handler(request)
-                             ^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py", line 1676, in get_notice
-    response = conn.getresponse()
-               ^^^^^^^^^^^^^^^^^^
-  File "/Users/yaofang/miniconda3/lib/python3.11/http/client.py", line 1378, in getresponse
-    response.begin()
-  File "/Users/yaofang/miniconda3/lib/python3.11/http/client.py", line 318, in begin
-    version, status, reason = self._read_status()
-                              ^^^^^^^^^^^^^^^^^^^
-  File "/Users/yaofang/miniconda3/lib/python3.11/http/client.py", line 287, in _read_status
-    raise RemoteDisconnected("Remote end closed connection without"
-http.client.RemoteDisconnected: Remote end closed connection without response
-got prompt
-Requested to load SDXL
-Loading 1 new model
-100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:24<00:00,  1.15s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:24<00:00,  1.21s/it]
-Requested to load AutoencoderKL
-Loading 1 new model
-Prompt executed in 51.10 seconds
-FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
-got prompt
-ERROR:root:Failed to validate prompt for output 18:
-ERROR:root:* UpscaleModelLoader 17:
-ERROR:root:  - Required input is missing: model_name
-ERROR:root:Output will be ignored
-Requested to load SDXL
-Loading 1 new model
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+  File "/Users/yaofang/miniconda3/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/Users/yaofang/miniconda3/lib/python3.11/threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py", line 2052, in <lambda>
+    threading.Thread(target=lambda: asyncio.run(default_cache_update())).start()
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yaofang/miniconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/yaofang/miniconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yaofang/miniconda3/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py", line 2050, in default_cache_update
+    await asyncio.gather(a, b, c, d)
+  File "/Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py", line 2038, in get_cache
+    json_obj = await get_data(uri)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py", line 475, in get_data
+    async with session.get(uri) as resp:
+  File "/Users/yaofang/miniconda3/lib/python3.11/site-packages/aiohttp/client.py", line 1187, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "/Users/yaofang/miniconda3/lib/python3.11/site-packages/aiohttp/client.py", line 601, in _request
+    await resp.start(conn)
+  File "/Users/yaofang/miniconda3/lib/python3.11/site-packages/aiohttp/client_reqrep.py", line 960, in start
+    with self._timer:
+  File "/Users/yaofang/miniconda3/lib/python3.11/site-packages/aiohttp/helpers.py", line 735, in __exit__
+    raise asyncio.TimeoutError from None
+TimeoutError
