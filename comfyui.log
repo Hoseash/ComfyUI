@@ -1,86 +1,16 @@
-** ComfyUI startup time: 2023-12-29 17:44:31.799140
+** ComfyUI startup time: 2023-12-29 23:40:31.703946
 ** Platform: Darwin
-** Python version: 3.11.5 (main, Sep 11 2023, 08:31:25) [Clang 14.0.6 ]
-** Python executable: /Users/yaofang/miniconda3/bin/python
+** Python version: 3.9.6 (default, Nov 10 2023, 13:38:27) 
+[Clang 15.0.0 (clang-1500.1.0.2.5)]
+** Python executable: /Library/Developer/CommandLineTools/usr/bin/python3
 ** Log path: /Users/yaofang/Documents/GitHub/ComfyUI/comfyui.log
 
 Prestartup times for custom nodes:
-   0.5 seconds: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager
+   0.0 seconds: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager
 
-Total VRAM 16384 MB, total RAM 16384 MB
-Forcing FP16.
-Set vram state to: SHARED
-Device: mps
-VAE dtype: torch.float32
-Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
-### Loading: ComfyUI-Manager (V1.17)
-### ComfyUI Revision: 1864 [79809297] | Released on '2023-12-29'
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
-### Loading: ComfyUI-Impact-Pack (V4.53.1)
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
-### Loading: ComfyUI-Impact-Pack (Subpack: V0.3.2)
-
-Import times for custom nodes:
-   0.1 seconds: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager
-   3.7 seconds: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Impact-Pack
-
-Starting server
-
-To see the GUI go to: http://127.0.0.1:8188
-[Impact Pack] Wildcards loading done.
-FETCH DATA from: /Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
-[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
-[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
-got prompt
-model_type EPS
-adm 0
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-missing {'cond_stage_model.clip_l.text_projection', 'cond_stage_model.clip_l.logit_scale'}
-left over keys: dict_keys(['cond_stage_model.clip_l.transformer.text_model.embeddings.position_ids'])
-Requested to load SD1ClipModel
-Loading 1 new model
-Requested to load BaseModel
-Loading 1 new model
-100%|████████████████████████████████████████████████████████████| 20/20 [00:20<00:00,  1.15it/s]100%|████████████████████████████████████████████████████████████| 20/20 [00:20<00:00,  1.00s/it]
-Requested to load AutoencoderKL
-Loading 1 new model
-Prompt executed in 25.87 seconds
-Exception in thread Thread-1 (<lambda>):
 Traceback (most recent call last):
-  File "/Users/yaofang/miniconda3/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
-    self.run()
-  File "/Users/yaofang/miniconda3/lib/python3.11/threading.py", line 975, in run
-    self._target(*self._args, **self._kwargs)
-  File "/Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py", line 2052, in <lambda>
-    threading.Thread(target=lambda: asyncio.run(default_cache_update())).start()
-                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yaofang/miniconda3/lib/python3.11/asyncio/runners.py", line 190, in run
-    return runner.run(main)
-           ^^^^^^^^^^^^^^^^
-  File "/Users/yaofang/miniconda3/lib/python3.11/asyncio/runners.py", line 118, in run
-    return self._loop.run_until_complete(task)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yaofang/miniconda3/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
-    return future.result()
-           ^^^^^^^^^^^^^^^
-  File "/Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py", line 2050, in default_cache_update
-    await asyncio.gather(a, b, c, d)
-  File "/Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py", line 2038, in get_cache
-    json_obj = await get_data(uri)
-               ^^^^^^^^^^^^^^^^^^^
-  File "/Users/yaofang/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py", line 475, in get_data
-    async with session.get(uri) as resp:
-  File "/Users/yaofang/miniconda3/lib/python3.11/site-packages/aiohttp/client.py", line 1187, in __aenter__
-    self._resp = await self._coro
-                 ^^^^^^^^^^^^^^^^
-  File "/Users/yaofang/miniconda3/lib/python3.11/site-packages/aiohttp/client.py", line 601, in _request
-    await resp.start(conn)
-  File "/Users/yaofang/miniconda3/lib/python3.11/site-packages/aiohttp/client_reqrep.py", line 960, in start
-    with self._timer:
-  File "/Users/yaofang/miniconda3/lib/python3.11/site-packages/aiohttp/helpers.py", line 735, in __exit__
-    raise asyncio.TimeoutError from None
-TimeoutError
+  File "/Users/yaofang/Documents/GitHub/ComfyUI/main.py", line 73, in <module>
+    import comfy.utils
+  File "/Users/yaofang/Documents/GitHub/ComfyUI/comfy/utils.py", line 5, in <module>
+    import safetensors.torch
+ModuleNotFoundError: No module named 'safetensors'
